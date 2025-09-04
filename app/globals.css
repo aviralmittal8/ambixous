@@ -130,4 +130,3 @@
   .btn-outline {
     @apply bg-transparent text-warm-white font-bold px-6 py-3 rounded-xl border-2 border-slate-gray hover:border-ambixous-neon hover:text-ambixous-neon transition-all duration-200 hover:scale-105;
   }
-
