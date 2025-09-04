@@ -6,22 +6,22 @@ export function ProcessSection() {
       icon: MessageCircle,
       title: "Discovery Call",
       description:
-        "We start with a conversation to understand your vision, challenges, and goals. No decks unless you want one.",
+        "Understand your vision, challenges, and goals to create a data-backed strategy.",
     },
     {
       icon: Lightbulb,
       title: "Strategy & Planning",
-      description: "We craft a tailored approach that aligns with your brand values and business objectives.",
+      description: "Develop a tailored approach that aligns with your objectives.",
     },
     {
       icon: Rocket,
       title: "Execution & Launch",
-      description: "Our team brings the strategy to life with meticulous attention to detail and seamless execution.",
+      description: "Bring the strategy to life with precision and impact.",
     },
     {
       icon: Target,
       title: "Measure & Optimize",
-      description: "We track performance, gather insights, and continuously optimize for better results.",
+      description: "Continuously improve through a data-driven optimization loop for lasting results.",
     },
   ]
 
@@ -35,7 +35,7 @@ export function ProcessSection() {
               Our <span className="text-gradient">Process</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-gray max-w-3xl mx-auto">
-              A proven approach that turns your vision into reality, step by step.
+              A streamlined 4-step process designed to minimize risk and maximize results
             </p>
           </div>
 

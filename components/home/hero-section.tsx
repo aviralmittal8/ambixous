@@ -21,8 +21,7 @@ export function HeroSection() {
                 <span className="text-gradient">Grow.</span> <span className="text-warm-white">Together.</span>
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-slate-gray max-w-2xl leading-relaxed">
-                Where ideas find momentum and impact finds a home. Welcome to Ambixous, a bridge between
-                community-driven change and business-driven innovation.
+                Ambixous is your place to connect people with purpose and businesses with opportunity, so together, we create meaningful impact that lasts.
               </p>
             </div>
 
@@ -43,7 +42,7 @@ export function HeroSection() {
                 size="lg"
                 className="bg-transparent text-signal-blue hover:bg-signal-blue hover:text-electric-ink font-bold px-8 py-4 rounded-xl border-2 border-signal-blue transition-all duration-200 hover:scale-105 group"
               >
-                <Link href="/community" className="flex items-center gap-2">
+                <Link href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t" target="_blank" className="flex items-center gap-2">
                   Join the Community
                   <Sparkles size={20} className="group-hover:rotate-12 transition-transform duration-200" />
                 </Link>

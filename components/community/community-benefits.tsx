@@ -4,22 +4,22 @@ export function CommunityBenefits() {
   const benefits = [
     {
       icon: Users,
-      title: "Real-life mentors and peer-led growth",
-      description: "Connect with experienced professionals and learn from peers who share your journey.",
+      title: "Real-life mentors and peer-led growth ",
+      description: "Get exclusive access to industry mentors and learn from peers who’ve landed top roles and built thriving ventures.",
     },
     {
       icon: BookOpen,
       title: "Access to panels, bootcamps, and learning sprints",
-      description: "Participate in curated educational experiences designed to accelerate your growth.",
+      description: "Join high-impact skill bootcamps and curated sessions that have helped members secure jobs, promotions, and funding.",
     },
     {
       icon: Calendar,
       title: "Invitations to community-only events",
-      description: "Get exclusive access to networking events, workshops, and special gatherings.",
+      description: " Attend invite-only events where industry connections are made and career trajectories change overnight.",
     },
     {
       icon: Gift,
-      title: "No cost. No fluff. Just real value.",
+      title: "No cost. No fluff. Just real value",
       description: "Everything we offer is completely free, focused on delivering genuine impact and growth.",
     },
   ]

@@ -136,7 +136,7 @@ export function EventsSection() {
               asChild
               size="lg"
               variant="outline"
-              className="border-signal-blue text-signal-blue hover:bg-signal-blue hover:text-electric-ink group bg-transparent"
+              className="border-signal-blue ext-signal-blue hover:bg-signal-blue hover:text-electric-ink group bg-transparent transition-all duration-300 hover:scale-105 group"
             >
               <Link href="/events" className="flex items-center gap-2">
                 View All Events

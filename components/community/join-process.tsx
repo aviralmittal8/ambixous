@@ -69,12 +69,12 @@ export function JoinProcess() {
             <div className="bg-slate-900/50 p-8 rounded-2xl border border-slate-gray/20">
               <div className="text-center space-y-6">
                 <h3 className="text-2xl font-bold text-warm-white">Ready to Join?</h3>
-                <p className="text-slate-gray">Fill out our community form to get started</p>
+                <p className="text-slate-gray"> Ready to join? Fill out our quick form and step into a network that could change your career.</p>
 
                 {/* Google Form Iframe */}
                 <div className="bg-white rounded-xl overflow-hidden">
                   <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSf_example_form_id/viewform?embedded=true"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSetuCjRbgIeiRmfkQ7dG61OcnnqUja6G8K7NbvEygYZt6GEWQ/viewform?embedded=true"
                     width="100%"
                     height="600"
                     frameBorder="0"
@@ -94,7 +94,7 @@ export function JoinProcess() {
                     className="bg-ambixous-neon text-electric-ink hover:bg-ambixous-neon/90 hover:scale-105 transition-all duration-200"
                   >
                     <a
-                      href="https://chat.whatsapp.com/ambixous-community"
+                      href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"

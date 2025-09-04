@@ -34,7 +34,7 @@ export function CommunityHero() {
                 className="bg-ambixous-neon text-electric-ink hover:bg-ambixous-neon/90 font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-ambixous-neon/25 transition-all duration-200 hover:scale-105 group"
               >
                 <a
-                  href="https://chat.whatsapp.com/ambixous-community"
+                  href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -59,7 +59,7 @@ export function CommunityHero() {
             {/* Community Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center space-y-2">
-                <div className="text-2xl sm:text-3xl font-bold text-ambixous-neon">5k+</div>
+                <div className="text-2xl sm:text-3xl font-bold text-ambixous-neon">5000+</div>
                 <div className="text-sm text-slate-gray">Members</div>
               </div>
               <div className="text-center space-y-2">

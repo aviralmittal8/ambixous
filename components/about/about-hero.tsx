@@ -19,14 +19,10 @@ export function AboutHero() {
                   <span className="text-warm-white">Who</span> <span className="text-gradient">We Are</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-slate-gray leading-relaxed">
-                  Born at the intersection of purpose and progress, Ambixous is more than a platform — we're a movement.
-                  We believe that the most powerful innovations happen when community-driven passion meets
-                  business-driven execution.
+                  Born at the intersection of purpose and progress, Ambixous is a corporate innovation partner and community growth platform that accelerates ideas, empowers people, and ignites the startup ecosystem. 
                 </p>
                 <p className="text-lg text-slate-gray leading-relaxed">
-                  Our mission is simple: create spaces where individuals can grow through learning, and where brands can
-                  grow through meaningful action. We're building bridges between dreams and reality, one connection at a
-                  time.
+                  We create spaces where individuals learn, brands act, and impact lasts. Join a movement where industry leaders and change-makers converge.
                 </p>
               </div>
             </div>

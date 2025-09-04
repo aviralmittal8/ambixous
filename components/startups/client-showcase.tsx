@@ -1,6 +1,51 @@
 export function ClientShowcase() {
   const clients = [
+    "Commudle",
+    "MyCTO",
+    "FreeStand",
+    "Piyush Academy",
+    "Trainman",
+    "Adani",
+    "Expedia Group",
+    "Deloitte",
+    "American Express",
+    "Info Edge India Ltd",
+    "Adani Digital Labs",
+    "Factacy.ai",
+    "UKG, Ex- Mobikwik",
+    "Capgemini",
+    "Capgemini",
+    "Cradlewise",
+    "Paytm",
+    "Maruti Suzuki",
+    "Paypal",
+    "Financial Express",
+    "Astrotalk",
+    "Tata Group",
+    "EPAM",
+    "Netskope",
+    "Ex-Nagarro",
     "Microsoft",
+    "Commudle",
+    "Taylor & Francis Group",
+    "Times Internet",
+    "Tata 1Mg",
+    "Signo",
+    "IIT Delhi",
+    "Airtel",
+    "Adobe",
+    "ClassCover",
+    "NIT Andhra",
+    "Policybazaar",
+    "Lenskart",
+    "Leap Wallet",
+    "Payoneer",
+    "HARMAN International",
+    "Cadre Tech",
+    "ARC Document Solutions",
+    "OLA",
+    "Deutsche Telekom Digital Labs",
+    "Amazon","Microsoft",
     "ThoughtWorks",
     "Kraftz Diaries",
     "Yumscop",
@@ -13,21 +58,40 @@ export function ClientShowcase() {
   const testimonials = [
     {
       quote:
-        "Ambixous transformed our product launch from a simple announcement into a movement. The community engagement was phenomenal.",
-      company: "Tech Startup",
+        "Ambixous transformed our product launch… ",
       result: "300% increase in sign-ups",
+      company: "Tech Startup",
+
     },
     {
       quote:
-        "Their approach to employer branding helped us attract talent that truly aligns with our culture and values.",
+        "heir employer branding helped us attract talent… ",
       company: "Growing Scale-up",
       result: "50% faster hiring process",
     },
     {
       quote:
-        "The corporate event they designed for us wasn't just an event—it was an experience that our team still talks about.",
+        "The corporate event they designed…",
       company: "Enterprise Client",
       result: "95% employee satisfaction",
+    },
+    {
+      quote:
+        "Content and social media strategy boosted engagement… ",
+      company: "E-commerce Brand",
+      result: "4x higher click-through rates",
+    },
+    {
+      quote:
+        "Digital experience revamp increased conversions… ",
+      company: "Fintech startup",
+      result: "35% revenue growth in 3 months.",
+    },
+    {
+      quote:
+        "Strategic launch campaign reduced time-to-market… ",
+      company: "Consulting Firm",
+      result: "Saving $50k dollar in operational costs",
     },
   ]
 
@@ -43,7 +107,7 @@ export function ClientShowcase() {
           </div>
 
           {/* Client Logos */}
-          <div className="relative overflow-hidden">
+          <div className="flex overflow-hidden">
             <div className="flex animate-marquee">
               {[...clients, ...clients].map((client, index) => (
                 <div
@@ -71,8 +135,9 @@ export function ClientShowcase() {
                 <div className="space-y-4">
                   <blockquote className="text-slate-600 italic leading-relaxed">"{testimonial.quote}"</blockquote>
                   <div className="space-y-2">
-                    <div className="font-semibold text-electric-ink">{testimonial.company}</div>
                     <div className="text-signal-blue font-bold">{testimonial.result}</div>
+                    <div className="font-semibold text-electric-ink">{testimonial.company}</div>
+
                   </div>
                 </div>
               </div>

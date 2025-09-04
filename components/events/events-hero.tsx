@@ -24,8 +24,7 @@ export function EventsHero() {
                 <span className="text-warm-white">Events That</span> <span className="text-gradient">Activate.</span>
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-slate-gray max-w-2xl leading-relaxed">
-                From intimate learning sessions to large-scale corporate experiences, every event we create is designed
-                to spark connections and drive meaningful outcomes.
+                From intimate learning sessions to large-scale corporate experiences, every event we create is designed to spark connections and drive meaningful outcomes.
               </p>
             </div>
 

@@ -9,10 +9,10 @@ export function JoinCTA() {
         <div className="max-w-4xl mx-auto text-center space-y-12 animate-fade-in">
           <div className="space-y-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-warm-white">
-              Ready to <span className="text-gradient">Get Started?</span>
+              Get <span className="text-gradient">Started</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-gray leading-relaxed">
-              Whether you're scaling a vision or just starting yours — there's a place here for you.
+              Whether you’re scaling a vision or just starting yours, there’s a place here for you.
             </p>
           </div>
 
@@ -28,15 +28,15 @@ export function JoinCTA() {
                 <div className="space-y-3">
                   <h3 className="text-2xl font-bold text-warm-white">Join Our Community</h3>
                   <p className="text-slate-gray">
-                    Connect with like-minded individuals, learn from mentors, and grow together in our supportive
-                    ecosystem.
+                    Join now to unlock mentorship, growth opportunities, and exclusive events. Connect with like-minded individuals in a supportive ecosystem designed for personal and professional growth.
+
                   </p>
                 </div>
                 <Button
                   asChild
-                  className="w-full bg-ambixous-neon text-electric-ink hover:bg-ambixous-neon/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-ambixous-neon/25 transition-all duration-200 hover:scale-105"
+                  className="w-full bg-ambixous-neon text-electric-ink hover:bg-ambixous-neon/90 font-bold py-3 rounded-xl shadow-lg hover:border-ambixous-neon/50 transition-all duration-300 hover:scale-105 group"
                 >
-                  <Link href="/community" className="flex items-center justify-center gap-2">
+                  <Link href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t" target="_blank" className="flex items-center justify-center gap-2">
                     Join Community
                     <ArrowRight size={20} />
                   </Link>
@@ -55,8 +55,7 @@ export function JoinCTA() {
                 <div className="space-y-3">
                   <h3 className="text-2xl font-bold text-warm-white">Start a Project</h3>
                   <p className="text-slate-gray">
-                    Partner with us to create meaningful experiences that resonate with your audience and drive real
-                    impact.
+                    Partner with us today to co-create meaningful experiences that drive real impact. Tap into startup support services and corporate collaboration opportunities that turn bold ideas into measurable results.
                   </p>
                 </div>
                 <Button
