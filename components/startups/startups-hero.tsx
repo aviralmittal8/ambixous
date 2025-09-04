@@ -5,8 +5,8 @@ import { Mail, MessageCircle, Rocket, Target, Zap } from "lucide-react"
 
 export function StartupsHero() {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Hey, I have a business requirement")
-    window.open(`https://wa.me/1234567890?text=${message}`, "_blank")
+    const message = encodeURIComponent("Hey Avnish, I need to know more about Ambixous")
+    window.open(`https://wa.me/7417914565?text=${message}`, "_blank")
   }
 
   return (
@@ -23,14 +23,13 @@ export function StartupsHero() {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-                <span className="text-warm-white">Smart Brands Don't Just</span>{" "}
-                <span className="text-gradient">Grow.</span>
+                <span className="text-warm-white"> Smart Brands</span>{" "}
+                <span className="text-gradient">Don't Just</span>
                 <br />
-                <span className="text-warm-white">They</span> <span className="text-gradient">Connect.</span>
+                <span className="text-warm-white">Grow</span><br /> <span className="text-gradient"> They Connect</span>
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-slate-gray max-w-2xl leading-relaxed">
-                We help you build experiences that resonate — and convert. Explore our corporate offerings delivered via
-                Ambixous Innovations LLP.
+                At Ambixous Innovations LLP, we craft business growth strategies and brand activations that resonate, convert, and build lasting engagement, loyalty, and sales.
               </p>
             </div>
 

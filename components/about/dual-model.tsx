@@ -13,7 +13,7 @@ export function DualModel() {
               The <span className="text-gradient">Dual Model</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              Two distinct arms working in harmony to create maximum impact for individuals and businesses alike.
+              Two powerful verticals, community empowerment and corporate innovation, working together to deliver measurable growth and meaningful impact. 
             </p>
           </div>
 
@@ -35,14 +35,13 @@ export function DualModel() {
                     </div>
 
                     <p className="text-slate-600 leading-relaxed text-lg">
-                      Our heart and soul — a thriving ecosystem where builders, dreamers, and learners come together. We
-                      foster growth through mentorship, peer learning, and community-driven initiatives.
+                     Our heart and soul, a thriving peer learning community where builders, dreamers, and learners come together. We foster growth through a strong mentorship network, skill development programs, and community-driven initiatives. 
                     </p>
 
                     <div className="space-y-3">
                       <div className="flex items-center gap-3 text-slate-600">
                         <div className="w-2 h-2 bg-ambixous-neon rounded-full"></div>
-                        <span>12k+ active community members</span>
+                        <span>5,000+ active community members</span>
                       </div>
                       <div className="flex items-center gap-3 text-slate-600">
                         <div className="w-2 h-2 bg-ambixous-neon rounded-full"></div>
@@ -58,7 +57,7 @@ export function DualModel() {
                       asChild
                       className="w-full bg-ambixous-neon text-electric-ink hover:bg-ambixous-neon/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-ambixous-neon/25 transition-all duration-200 hover:scale-105"
                     >
-                      <Link href="/community" className="flex items-center justify-center gap-2">
+                      <Link href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t" target="_blank" className="flex items-center justify-center gap-2">
                         Join Our Community
                         <ArrowRight size={20} />
                       </Link>
@@ -82,9 +81,7 @@ export function DualModel() {
                     </div>
 
                     <p className="text-slate-600 leading-relaxed text-lg">
-                      Our strategic execution arm that helps startups and established companies create meaningful
-                      experiences. We turn bold visions into impactful realities through thoughtful design and
-                      execution.
+                      Our strategic execution arm that helps startups and established companies create meaningful experiences. We turn bold visions into impactful realities through thoughtful design and execution.
                     </p>
 
                     <div className="space-y-3">
@@ -94,11 +91,11 @@ export function DualModel() {
                       </div>
                       <div className="flex items-center gap-3 text-slate-600">
                         <div className="w-2 h-2 bg-signal-blue rounded-full"></div>
-                        <span>Corporate events & brand experiences</span>
+                        <span>Corporate events and brand experiences</span>
                       </div>
                       <div className="flex items-center gap-3 text-slate-600">
                         <div className="w-2 h-2 bg-signal-blue rounded-full"></div>
-                        <span>Digital solutions & strategy</span>
+                        <span>Digital solutions and strategy</span>
                       </div>
                     </div>
 

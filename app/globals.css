@@ -40,9 +40,10 @@
     animation: glow 2s ease-in-out infinite alternate;
   }
 
-  .animate-marquee {
-    animation: marquee 30s linear infinite;
-  }
+ .animate-marquee {
+  animation: marquee 80s linear infinite;
+}
+}
 
   .animate-float {
     animation: float 6s ease-in-out infinite;
@@ -129,4 +130,4 @@
   .btn-outline {
     @apply bg-transparent text-warm-white font-bold px-6 py-3 rounded-xl border-2 border-slate-gray hover:border-ambixous-neon hover:text-ambixous-neon transition-all duration-200 hover:scale-105;
   }
-}
+

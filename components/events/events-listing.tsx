@@ -4,55 +4,34 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 const upcomingEvents = [
   {
     id: 1,
-    title: "AI for Social Good Workshop",
-    date: "March 15, 2025",
-    time: "2:00 PM - 5:00 PM",
-    type: "Community",
-    location: "Virtual",
-    attendees: 200,
-    description: "Learn how AI can be leveraged to solve real-world social problems and create positive impact.",
-    speakers: ["Dr. Sarah Chen", "Raj Patel"],
+    title: "Disrupting the Funnel: The Future of AdTech & Brand Marketing",
+    date: "September 13, 2025",
+    time: "1:00 PM – 5:00 PM",
+    type: "Corporate",
+    location: "Noida",
+    attendees: 100,
+    description: "Disrupting the Funnel is an afternoon of candid insights, proven playbooks, and pitfalls to avoid from AdTech innovators and growth leaders on taking a brand from 0 → 1.",
+    speakers: ["Ms.Shaweta Berry", "Rohit Kaul", "Rachita Gupta", "Sayantan Dasgupta"],
     status: "Open",
+    registrationUrl: "https://www.commudle.com/communities/ambixous/events/disrupting-the-funnel-the-future-of-adtech-brand-marketing",
   },
   {
     id: 2,
-    title: "Corporate Innovation Summit",
-    date: "March 22, 2025",
-    time: "9:00 AM - 6:00 PM",
-    type: "Corporate",
-    location: "Mumbai",
-    attendees: 150,
-    description: "A full-day summit exploring the latest trends in corporate innovation and digital transformation.",
-    speakers: ["CEO Panel", "Innovation Leaders"],
-    status: "Limited Seats",
-  },
-  {
-    id: 3,
-    title: "Women in Tech Networking",
-    date: "April 5, 2025",
-    time: "6:00 PM - 9:00 PM",
+    title: "SkillUp Bootcamp",
+    date: "August 2, 2025",
+    time: "10:30 AM – 04:00 PM",
     type: "Community",
-    location: "Bangalore",
-    attendees: 100,
-    description: "An evening of networking, mentorship, and celebrating women making waves in technology.",
-    speakers: ["Industry Leaders", "Startup Founders"],
-    status: "Open",
-  },
-  {
-    id: 4,
-    title: "Product Strategy Bootcamp",
-    date: "April 12, 2025",
-    time: "10:00 AM - 4:00 PM",
-    type: "Corporate",
-    location: "Delhi",
-    attendees: 80,
-    description: "Intensive workshop on product strategy, roadmapping, and execution for growing companies.",
-    speakers: ["Product VPs", "Strategy Consultants"],
-    status: "Early Bird",
+    location: "Noida",
+    attendees: 200,
+    description: "A high-impact learning experience for developers, designers, and tech professionals to upskill through live sessions with experts from Google, Deloitte, Policy Bazaar, and Nagarro.",
+    speakers: ["varedh nigam", "Nitasha Dhingra","Sneha Swaroop","Satendra Kumar"],
+    status: "Closed",
+    registrationUrl: "https://www.commudle.com/communities/ambixous/events/skillup-bootcamp",
   },
 ]
 
@@ -71,7 +50,7 @@ export function EventsListing() {
               Upcoming <span className="text-gradient">Events</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              Join us for transformative experiences that blend learning, networking, and real-world impact.
+              Be part of experiences that change careers and grow businesses,  blending learning, networking, and real-world impact. Book your spot before it’s gone!
             </p>
           </div>
 
@@ -168,12 +147,14 @@ export function EventsListing() {
                   </div>
 
                   {/* Register Button */}
-                  <Button className="w-full bg-signal-blue text-electric-ink hover:bg-signal-blue/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-signal-blue/25 transition-all duration-200 hover:scale-105 group">
-                    <span className="flex items-center justify-center gap-2">
-                      Register Now
-                      <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
-                    </span>
-                  </Button>
+                  <Link href={event.registrationUrl} target="_blank" rel="noopener noreferrer" className="w-full">
+                    <Button className="w-full bg-signal-blue text-electric-ink hover:bg-signal-blue/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-signal-blue/25 transition-all duration-200 hover:scale-105 group">
+                      <span className="flex items-center justify-center gap-2">
+                        Register Now
+                        <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
+                      </span>
+                    </Button>
+                  </Link>
                 </div>
               </div>
             ))}

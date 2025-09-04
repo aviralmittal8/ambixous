@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 const testimonials = [
   {
     id: 1,
-    quote: "Ambixous helped me meet mentors I didn't know I needed. It changed my direction completely.",
+    quote: "Ambixous helped me meet mentors I didn’t know I needed. It changed my direction completely.",
     author: "Sarah Chen",
     role: "Product Manager",
   },

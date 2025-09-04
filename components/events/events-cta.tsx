@@ -12,8 +12,7 @@ export function EventsCTA() {
               Never Miss an <span className="text-gradient">Event</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
-              Stay connected with our community and be the first to know about upcoming events, workshops, and
-              networking opportunities.
+              Stay connected and get VIP early access to our most in-demand events before public registration opens. Don’t miss exclusive networking opportunities and high-value experiences.
             </p>
           </div>
 
@@ -36,7 +35,7 @@ export function EventsCTA() {
                   asChild
                   className="w-full bg-ambixous-neon text-electric-ink hover:bg-ambixous-neon/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-ambixous-neon/25 transition-all duration-200"
                 >
-                  <Link href="/community">Join Now</Link>
+                  <Link href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t" target="_blank">Join Now</Link>
                 </Button>
               </div>
             </div>
@@ -52,11 +51,11 @@ export function EventsCTA() {
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold">Get Notified</h3>
                   <p className="text-slate-600 text-sm">
-                    Subscribe to our newsletter for event updates and announcements.
+                    Stay updated with the latest events, workshops, and community insights.
                   </p>
                 </div>
                 <Button className="w-full bg-transparent text-signal-blue hover:bg-signal-blue hover:text-electric-ink font-bold py-3 rounded-xl border-2 border-signal-blue transition-all duration-200">
-                  Subscribe
+                  Subscribe Now
                 </Button>
               </div>
             </div>

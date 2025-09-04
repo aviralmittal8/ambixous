@@ -6,7 +6,7 @@ export function Values() {
       icon: Compass,
       title: "Curiosity",
       description:
-        "We believe that asking the right questions is more valuable than having all the answers. Curiosity drives innovation and opens doors to unexpected possibilities.",
+        "We believe asking the right questions sparks breakthroughs. For communities, it opens new learning pathways; for businesses, it uncovers untapped opportunities and market insights.",
       color: "text-ambixous-neon",
       bgColor: "bg-ambixous-neon/20",
     },
@@ -14,7 +14,7 @@ export function Values() {
       icon: Users,
       title: "Collaboration",
       description:
-        "Great things happen when diverse minds come together. We foster environments where different perspectives merge to create something greater than the sum of its parts.",
+        "When diverse minds connect, innovation multiplies. We create spaces where communities share knowledge and corporates co-create solutions, leading to ideas greater than the sum of their parts.",
       color: "text-signal-blue",
       bgColor: "bg-signal-blue/20",
     },
@@ -22,7 +22,7 @@ export function Values() {
       icon: Zap,
       title: "Courage",
       description:
-        "Taking the first step, making the bold move, speaking up for what matters — courage is what transforms ideas into impact and dreams into reality.",
+        "Bold moves turn visions into reality. We empower individuals to take the leap in their growth journeys and enable businesses to execute high-impact strategies with confidence.",
       color: "text-sun-coral",
       bgColor: "bg-sun-coral/20",
     },
@@ -38,7 +38,7 @@ export function Values() {
               Our <span className="text-gradient">Values</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-gray max-w-3xl mx-auto">
-              The principles that guide everything we do and every connection we make.
+              What we stand on, and stand for.
             </p>
           </div>
 

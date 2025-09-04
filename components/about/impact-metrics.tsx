@@ -13,7 +13,7 @@ export function ImpactMetrics() {
   const metrics = [
     {
       icon: Users,
-      number: 12000,
+      number: 5000,
       suffix: "+",
       label: "Community Members",
       description: "Active learners and builders",
@@ -56,7 +56,7 @@ export function ImpactMetrics() {
       number: 1000,
       suffix: "+",
       label: "Lives Impacted",
-      description: "Stories of growth and success",
+      description: "Real Stories of growth and success",
       color: "text-sun-coral",
     },
   ]
@@ -103,7 +103,7 @@ export function ImpactMetrics() {
               Impact <span className="text-gradient">Metrics</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              Numbers that tell the story of our growing community and the lives we've touched.
+              Be part of one of the fastest-growing innovation networks in India - trusted by top corporates and powered by grassroots energy.
             </p>
           </div>
 

@@ -1,15 +1,51 @@
 export function NetworkSection() {
   const partners = [
-    "Microsoft",
-    "Google",
-    "ThoughtWorks",
-    "PolicyBazaar",
+    "Commudle",
+    "MyCTO",
+    "FreeStand",
+    "Piyush Academy",
+    "Trainman",
+    "Adani",
+    "Expedia Group",
     "Deloitte",
-    "Nagarro",
-    "Kraftz Diaries",
-    "Yumscop",
-    "Sambhav Samwaad",
-    "Ofis Square",
+    "American Express",
+    "Info Edge India Ltd",
+    "Adani Digital Labs",
+    "Factacy.ai",
+    "UKG, Ex- Mobikwik",
+    "Capgemini",
+    "Capgemini",
+    "Cradlewise",
+    "Paytm",
+    "Maruti Suzuki",
+    "Paypal",
+    "Financial Express",
+    "Astrotalk",
+    "Tata Group",
+    "EPAM",
+    "Netskope",
+    "Ex-Nagarro",
+    "Microsoft",
+    "Commudle",
+    "Taylor & Francis Group",
+    "Times Internet",
+    "Tata 1Mg",
+    "Signo",
+    "IIT Delhi",
+    "Airtel",
+    "Adobe",
+    "ClassCover",
+    "NIT Andhra",
+    "Policybazaar",
+    "Lenskart",
+    "Leap Wallet",
+    "Payoneer",
+    "HARMAN International",
+    "Cadre Tech",
+    "ARC Document Solutions",
+    "OLA",
+    "Deutsche Telekom Digital Labs",
+    "Amazon",
   ]
 
   return (
@@ -33,7 +69,9 @@ export function NetworkSection() {
                     key={`${partner}-${index}`}
                     className="flex-shrink-0 mx-8 px-6 py-4 bg-slate-900/50 rounded-xl border border-slate-gray/20 hover:border-ambixous-neon/50 transition-all duration-300"
                   >
-                    <span className="text-warm-white font-semibold text-lg whitespace-nowrap">{partner}</span>
+                    <span className="text-warm-white font-semibold text-lg whitespace-nowrap">
+                      {partner}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -47,7 +85,7 @@ export function NetworkSection() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="text-center space-y-2">
-              <div className="text-4xl font-bold text-ambixous-neon">5k+</div>
+              <div className="text-4xl font-bold text-ambixous-neon">5000+</div>
               <div className="text-slate-gray">Community Members</div>
             </div>
             <div className="text-center space-y-2">

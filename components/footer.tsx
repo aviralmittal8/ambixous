@@ -27,8 +27,7 @@ export function Footer() {
               Ambixous
             </Link>
             <p className="text-slate-gray max-w-sm">
-              Where ideas find momentum and impact finds a home. Building bridges between community-driven change and
-              business-driven innovation.
+              Where ambition finds speed and impact finds scale
             </p>
           </div>
 

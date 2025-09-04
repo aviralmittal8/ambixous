@@ -4,15 +4,15 @@ export function FoundersSection() {
   const founders = [
     {
       name: "Riti Gupta",
-      role: "Community Architect, Brand Strategist, and Storyteller-in-Chief",
+      role: "Community Evangelist | Brand Strategist | Storyteller-in-Chief",
       description:
-        "Passionate about building authentic connections and crafting narratives that resonate. Riti brings communities together through the power of shared stories and meaningful experiences.",
+        "A community builder and strategist, 2x Community Founder. Recognised for creating authentic connections through powerful narrative and design.",
     },
     {
       name: "Avnish Singh",
-      role: "Systems Thinker, Operations Lead, and Growth Engine",
+      role: "Public Speaker | Product Manager | Community-Driven Builder",
       description:
-        "The strategic mind behind seamless execution. Avnish transforms complex challenges into streamlined solutions, ensuring every initiative scales with precision and purpose.",
+        "A product professional with hands-on experience building products, scaling startups and enterprises. Known for turning bold ideas into measurable, high-impact growth.",
     },
   ]
 
@@ -61,9 +61,7 @@ export function FoundersSection() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-electric-ink">Our Origin Story</h3>
               <p className="text-slate-600 leading-relaxed text-lg">
-                What started as late-night conversations about bridging the gap between community impact and business
-                growth has evolved into a thriving ecosystem. We believe that the best innovations happen when purpose
-                meets profit, and when individual growth fuels collective progress.
+                Ambixous began as small talks about blending community impact with business growth. Now, it’s a 5,000+ members strong grassroots-to-global network, inclusive of founders, investors, professionals & students, turning shared ideas into real, lasting impact.
               </p>
             </div>
           </div>

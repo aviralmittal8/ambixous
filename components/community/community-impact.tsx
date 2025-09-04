@@ -6,7 +6,7 @@ export function CommunityImpact() {
   const stats = [
     {
       icon: Users,
-      number: "12k+",
+      number: "5000+",
       label: "members",
       color: "text-ambixous-neon",
     },
@@ -64,7 +64,7 @@ export function CommunityImpact() {
             <div className="max-w-2xl mx-auto space-y-4">
               <h3 className="text-3xl font-bold text-electric-ink">Want to Make an Even Bigger Impact?</h3>
               <p className="text-xl text-slate-600">
-                Join our volunteer team and help us create more opportunities for growth and connection.
+                Become part of our core impact team, the people shaping India’s fastest-growing growth network. As a volunteer, you’ll gain student leadership program experience, hands-on event management skills, and corporate exposure through high-impact projects. This is your chance to lead, learn, and leave a legacy.
               </p>
             </div>
 
@@ -72,7 +72,7 @@ export function CommunityImpact() {
               asChild
               size="lg"
               variant="outline"
-              className="border-ambixous-neon text-ambixous-neon hover:bg-ambixous-neon hover:text-electric-ink group bg-transparent"
+              className="bg-ambixous-neon text-electric-ink hover:border-ambixous-neon/90 hover:scale-105 transition-all duration-200"
             >
               <Link href="/contact" className="flex items-center gap-2">
                 <Heart size={20} className="group-hover:scale-110 transition-transform duration-200" />
