@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Instagram, Youtube, Twitter } from "lucide-react"
+import { Linkedin, Instagram, Youtube, Twitter, Target } from "lucide-react"
 
 export function Footer() {
   const navigation = [
@@ -11,10 +11,10 @@ export function Footer() {
   ]
 
   const socialLinks = [
-    { name: "LinkedIn", href: "#", icon: Linkedin },
-    { name: "Instagram", href: "#", icon: Instagram },
-    { name: "YouTube", href: "#", icon: Youtube },
-    { name: "Twitter", href: "#", icon: Twitter },
+    { name: "LinkedIn", href: "https://www.linkedin.com/company/ambixous/", icon: Linkedin },
+    { name: "Instagram", href: "https://www.instagram.com/myambixous/", icon: Instagram },
+    { name: "YouTube", href: "https://www.youtube.com/@Ambixous", icon: Youtube },
+    { name: "Twitter", href: "https://x.com/myambixous", icon: Twitter },
   ]
 
   return (
@@ -64,6 +64,7 @@ export function Footer() {
                     <a
                       key={social.name}
                       href={social.href}
+                      target="_blank"
                       className="text-slate-gray hover:text-ambixous-neon transition-colors duration-200"
                       aria-label={social.name}
                     >

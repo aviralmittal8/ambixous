@@ -34,7 +34,7 @@ export function StartupsCTA() {
                 <div className="space-y-3">
                   <h3 className="text-2xl font-bold text-warm-white">Email Us</h3>
                   <p className="text-slate-gray">
-                    Drop us a detailed message about your project and we'll get back to you within 24 hours.
+                    Drop us a detailed message about your project and we'll get back to you shortly.
                   </p>
                 </div>
                 <Button

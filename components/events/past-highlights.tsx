@@ -93,8 +93,8 @@ export function PastHighlights() {
                     <div className="flex items-center justify-between">
                       <span
                         className={`px-3 py-1 rounded-full text-sm font-semibold ${event.type === "Community"
-                            ? "bg-ambixous-neon/20 text-ambixous-neon"
-                            : "bg-signal-blue/20 text-signal-blue"
+                          ? "bg-ambixous-neon/20 text-ambixous-neon"
+                          : "bg-signal-blue/20 text-signal-blue"
                           }`}
                       >
                         {event.type}
@@ -123,9 +123,9 @@ export function PastHighlights() {
 
                   {/* Learn Now Button */}
                   <Link href={event.learnUrl} target="_blank" rel="noopener noreferrer" className="w-full">
-                    <Button className="w-full bg-signal-blue text-electric-ink hover:bg-signal-blue/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-signal-blue/25 transition-all duration-200 hover:scale-105 group">
+                    <Button className="mt-[7px] w-full bg-signal-blue text-electric-ink hover:bg-signal-blue/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-signal-blue/25 transition-all duration-200 hover:scale-105 group">
                       <span className="flex items-center justify-center gap-2">
-                        Learn Now
+                        Learn More
                         <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
                       </span>
                     </Button>
