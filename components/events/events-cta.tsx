@@ -55,7 +55,7 @@ export function EventsCTA() {
                   </p>
                 </div>
                 <Button className="w-full bg-transparent text-signal-blue hover:bg-signal-blue hover:text-electric-ink font-bold py-3 rounded-xl border-2 border-signal-blue transition-all duration-200">
-                  Subscribe Now
+                 <Link href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t" target="_blank">Subscribe Now</Link>
                 </Button>
               </div>
             </div>

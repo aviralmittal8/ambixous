@@ -14,7 +14,6 @@ export function ClientShowcase() {
     "Factacy.ai",
     "UKG, Ex- Mobikwik",
     "Capgemini",
-    "Capgemini",
     "Cradlewise",
     "Paytm",
     "Maruti Suzuki",
@@ -57,42 +56,35 @@ export function ClientShowcase() {
 
   const testimonials = [
     {
-      quote:
-        "Ambixous transformed our product launch… ",
-      result: "300% increase in sign-ups",
-      company: "Tech Startup",
-
-    },
-    {
-      quote:
-        "heir employer branding helped us attract talent… ",
-      company: "Growing Scale-up",
-      result: "50% faster hiring process",
-    },
-    {
-      quote:
-        "The corporate event they designed…",
-      company: "Enterprise Client",
-      result: "95% employee satisfaction",
-    },
-    {
-      quote:
-        "Content and social media strategy boosted engagement… ",
-      company: "E-commerce Brand",
-      result: "4x higher click-through rates",
-    },
-    {
-      quote:
-        "Digital experience revamp increased conversions… ",
-      company: "Fintech startup",
-      result: "35% revenue growth in 3 months.",
-    },
-    {
-      quote:
-        "Strategic launch campaign reduced time-to-market… ",
-      company: "Consulting Firm",
-      result: "Saving $50k dollar in operational costs",
-    },
+    quote: "It was a blast kicking things off, glad the energy was there from the start. Excited for the next one!",
+    result: "Yug",
+    company: "Deputy Manager, Airtel",
+  },
+  {
+    quote: "Your trust gave me confidence to deliver today’s session. Grateful for the seamless work!",
+    result: "Anoushka",
+    company: "SWE 2, Microsoft",
+  },
+  {
+    quote: "It was a blast interacting with everyone and fellow speakers. Excited for more collaborations!",
+    result: "Shruti Arora",
+    company: "DevRel, Commudle",
+  },
+  {
+    quote: "Thank you for the kind words and for organizing this interactive event. Truly an experience!",
+    result: "Shruti Sinha",
+    company: "Design Manager, Airtel",
+  },
+  {
+    quote: "Incredibly well-organized event, delighted to be part of it! Loved the energy and insights.",
+    result: "Hitesh Lakhyani",
+    company: "Design Leader, Tata1MG",
+  },
+  {
+    quote: "Thank you for making such an event to inspire people, you all brought such energy!",
+    result: "Tia V",
+    company: "AI Specialist, PR Department of Thailand",
+  },
   ]
 
   return (
@@ -102,7 +94,7 @@ export function ClientShowcase() {
           {/* Header */}
           <div className="text-center space-y-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-              Our <span className="text-gradient">Clients & Collabs</span>
+              Industry <span className="text-gradient">experts & mentors</span>
             </h2>
           </div>
 

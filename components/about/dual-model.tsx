@@ -13,7 +13,7 @@ export function DualModel() {
               The <span className="text-gradient">Dual Model</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-              Two powerful verticals, community empowerment and corporate innovation, working together to deliver measurable growth and meaningful impact. 
+              Two powerful verticals, community empowerment and corporate innovation, working together to deliver measurable growth and meaningful impact.
             </p>
           </div>
 
@@ -35,9 +35,8 @@ export function DualModel() {
                     </div>
 
                     <p className="text-slate-600 leading-relaxed text-lg">
-                     Our heart and soul, a thriving peer learning community where builders, dreamers, and learners come together. We foster growth through a strong mentorship network, skill development programs, and community-driven initiatives. 
+                      Our heart and soul, a thriving peer learning community of builders, and learners, driving growth through mentorship, skill development, and community-led initiatives that inspire learning
                     </p>
-
                     <div className="space-y-3">
                       <div className="flex items-center gap-3 text-slate-600">
                         <div className="w-2 h-2 bg-ambixous-neon rounded-full"></div>

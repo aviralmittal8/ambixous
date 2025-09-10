@@ -7,21 +7,39 @@ import { Button } from "@/components/ui/button"
 const testimonials = [
   {
     id: 1,
-    quote: "Ambixous helped me meet mentors I didn’t know I needed. It changed my direction completely.",
-    author: "Sarah Chen",
-    role: "Product Manager",
+    quote: "It was a blast kicking things off, glad the energy was there from the start. Excited for the next one!",
+    author: "Yug",
+    role: "Deputy Manager, Airtel",
   },
   {
     id: 2,
-    quote: "Their community sessions feel like family — warm, real, and game-changing.",
-    author: "Rajesh Kumar",
-    role: "Startup Founder",
+    quote: "Your trust gave me confidence to deliver today’s session. Grateful for the seamless work!",
+    author: "Anoushka",
+    role: "SWE 2, Microsoft",
   },
   {
     id: 3,
-    quote: "Our event collab with Ambixous made our product launch more human and more impactful.",
-    author: "Maria Rodriguez",
-    role: "Marketing Director",
+    quote: "It was a blast interacting with everyone and fellow speakers. Excited for more collaborations!",
+    author: "Shruti Arora",
+    role: "DevRel, Commudle",
+  },
+  {
+    id: 4,
+    quote: "Thank you for the kind words and for organizing this interactive event. Truly an experience!",
+    author: "Shruti Sinha",
+    role: "Design Manager, Airtel",
+  },
+  {
+    id: 5,
+    quote: "Incredibly well-organized event, delighted to be part of it! Loved the energy and insights.",
+    author: "Hitesh Lakhyani",
+    role: "Design Leader, Tata1MG",
+  },
+  {
+    id: 6,
+    quote: "Thank you for making such an event to inspire people, you all brought such energy!",
+    author: "Tia V",
+    role: "AI Specialist, PR Department of Thailand",
   },
 ]
 
@@ -31,7 +49,7 @@ export function TestimonialsSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length)
-    }, 5000)
+    }, 4000)
     return () => clearInterval(timer)
   }, [])
 

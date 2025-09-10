@@ -24,7 +24,7 @@ export function JoinProcess() {
   ]
 
   return (
-    <section className="py-24 bg-electric-ink">
+    <section id="join-process" className="py-24 bg-electric-ink">
       <div className="container-width section-padding">
         <div className="space-y-16 animate-fade-in">
           {/* Header */}

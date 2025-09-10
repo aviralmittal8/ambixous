@@ -9,7 +9,7 @@ import Link from "next/link"
 const upcomingEvents = [
   {
     id: 1,
-    title: "Disrupting the Funnel: The Future of AdTech & Brand Marketing",
+    title: "The Future of AdTech & Brand Marketing",
     date: "September 13, 2025",
     time: "1:00 PM – 5:00 PM",
     type: "Corporate",
@@ -29,7 +29,7 @@ const upcomingEvents = [
     location: "Noida",
     attendees: 200,
     description: "A high-impact learning experience for developers, designers, and tech professionals to upskill through live sessions with experts from Google, Deloitte, Policy Bazaar, and Nagarro.",
-    speakers: ["varedh nigam", "Nitasha Dhingra","Sneha Swaroop","Satendra Kumar"],
+    speakers: ["Varedh Nigam", "Nitasha Dhingra","Sneha Swaroop","Satendra Kumar"],
     status: "Closed",
     registrationUrl: "https://www.commudle.com/communities/ambixous/events/skillup-bootcamp",
   },
@@ -148,7 +148,7 @@ export function EventsListing() {
 
                   {/* Register Button */}
                   <Link href={event.registrationUrl} target="_blank" rel="noopener noreferrer" className="w-full">
-                    <Button className="w-full bg-signal-blue text-electric-ink hover:bg-signal-blue/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-signal-blue/25 transition-all duration-200 hover:scale-105 group">
+                    <Button className="mt-[7px] w-full bg-signal-blue text-electric-ink hover:bg-signal-blue/90 font-bold py-3 rounded-xl shadow-lg hover:shadow-signal-blue/25 transition-all duration-200 hover:scale-105 group">
                       <span className="flex items-center justify-center gap-2">
                         Register Now
                         <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
