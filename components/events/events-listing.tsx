@@ -9,7 +9,7 @@ import Link from "next/link"
 const upcomingEvents = [
   {
     id: 1,
-    title: "The Future of AdTech & Brand Marketing",
+    title: "Disrupting the Funnel",
     date: "September 13, 2025",
     time: "1:00 PM – 5:00 PM",
     type: "Corporate",
@@ -17,7 +17,7 @@ const upcomingEvents = [
     attendees: 100,
     description: "Disrupting the Funnel is an afternoon of candid insights, proven playbooks, and pitfalls to avoid from AdTech innovators and growth leaders on taking a brand from 0 → 1.",
     speakers: ["Ms.Shaweta Berry", "Rohit Kaul", "Rachita Gupta", "Sayantan Dasgupta"],
-    status: "Open",
+    status: "Closed",
     registrationUrl: "https://www.commudle.com/communities/ambixous/events/disrupting-the-funnel-the-future-of-adtech-brand-marketing",
   },
   {

@@ -1,4 +1,5 @@
-import { Quote } from "lucide-react"
+import { Quote, Mail } from "lucide-react"
+import { FaLinkedin } from "react-icons/fa"
 
 export function FoundersSection() {
   const founders = [
@@ -7,12 +8,16 @@ export function FoundersSection() {
       role: "Community Evangelist | Brand Strategist | Storyteller-in-Chief",
       description:
         "A community builder and strategist, 2x Community Founder. Recognised for creating authentic connections through powerful narrative and design.",
+      linkedin: "https://www.linkedin.com/in/ritigupta05/",
+      email: "codework.riti@gmail.com"
     },
     {
       name: "Avnish Singh",
       role: "Public Speaker | Product Manager | Community-Driven Builder",
       description:
         "A product professional with hands-on experience building products, scaling startups and enterprises. Known for turning bold ideas into measurable, high-impact growth.",
+      linkedin: "https://www.linkedin.com/in/singhavi279/",
+      email: "t20avnish@gmail.com"
     },
   ]
 
@@ -45,7 +50,23 @@ export function FoundersSection() {
                         <Quote className="text-ambixous-neon" size={20} />
                       </div>
                       <div className="space-y-2">
-                        <h3 className="text-2xl font-bold text-electric-ink">{founder.name}</h3>
+                        <div className="flex items-center gap-2">
+                          <h3 className="text-2xl font-bold text-electric-ink">{founder.name}</h3>
+                          <a
+                            href={founder.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`LinkedIn profile of ${founder.name}`}
+                          >
+                            <FaLinkedin size={20} color="#0A66C2" />
+                          </a>
+                          <a
+                            href={`mailto:${founder.email}`}
+                            aria-label={`Email ${founder.name}`}
+                          >
+                            <Mail size={20} color="#EA4335" />
+                          </a>
+                        </div>
                         <p className="text-signal-blue font-semibold">{founder.role}</p>
                       </div>
                     </div>
