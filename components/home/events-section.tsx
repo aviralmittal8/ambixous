@@ -7,8 +7,17 @@ import { Calendar, MapPin, Users, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 const events = [
-  {
+   {
     id: 1,
+    title: "Disrupting the Funnel",
+    date: "September 13, 2025",
+    type: "Corporate",
+    location: "Noida",
+    attendees: 100,
+    description: "The Future of AdTech & Brand Marketing",
+  },
+  {
+    id: 2,
     title: "SkillUp Bootcamp",
     date: "Aug 2, 2025",
     type: "Community",
@@ -17,7 +26,7 @@ const events = [
     description: "Intensive learning session for skill development",
   },
   {
-    id: 2,
+    id: 3,
     title: "Fusion Forum",
     date: "July 19, 2025",
     type: "Corporate",
@@ -26,22 +35,13 @@ const events = [
     description: "Corporate networking and innovation forum",
   },
   {
-    id: 3,
+    id: 4,
     title: "AI for Social Good",
     date: "April 05, 2025",
     type: "Community",
     location: "Virtual",
     attendees: 200,
     description: "Panel discussion on AI applications for social impact",
-  },
-  {
-    id: 4,
-    title: "The Ambitious Women: LIVE",
-    date: "March 08, 2025",
-    type: "Community",
-    location: "Virtual",
-    attendees: 300,
-    description: "Celebrating women in leadership and entrepreneurship",
   },
 ]
 
