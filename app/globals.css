@@ -1,56 +1,296 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind v4 core */
+@import "tailwindcss";
+@import "tw-animate-css";
 
+/* shadcn tokens with hsl() + brand tokens (no @layer wrapper here) */
+:root {
+  --background: hsl(240 10% 3.9%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(240 10% 3.9%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(240 10% 3.9%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(84 100% 50%);
+  --primary-foreground: hsl(240 5.9% 10%);
+  --secondary: hsl(240 3.7% 15.9%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(240 3.7% 15.9%);
+  --muted-foreground: hsl(240 5% 64.9%);
+  --accent: hsl(195 100% 56%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 62.8% 70.6%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(240 3.7% 15.9%);
+  --input: hsl(240 3.7% 15.9%);
+  --ring: hsl(84 100% 50%);
+  --radius: 0.75rem;
+
+  /* Optional shadcn extras and UI tokens */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Brand tokens */
+  --ambixous-neon: hsl(84 100% 50%); /* #B4FF00 */
+  --electric-ink: hsl(210 15% 3%); /* ~#010409 */
+  --signal-blue: hsl(195 100% 56%); /* #1FB6FF */
+  --warm-white: hsl(0 0% 97%); /* #F8F8F8 */
+  --slate-gray: hsl(0 0% 69%); /* #B0B0B0 */
+}
+
+.dark {
+  --background: hsl(240 10% 3.9%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(240 10% 3.9%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(240 10% 3.9%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(84 100% 50%);
+  --primary-foreground: hsl(240 5.9% 10%);
+  --secondary: hsl(240 3.7% 15.9%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(240 3.7% 15.9%);
+  --muted-foreground: hsl(240 5% 64.9%);
+  --accent: hsl(195 100% 56%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 62.8% 70.6%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(240 3.7% 15.9%);
+  --input: hsl(240 3.7% 15.9%);
+  --ring: hsl(84 100% 50%);
+
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+/* Map tokens to Tailwind v4 utilities */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* extra tokens */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* brand color utilities (bg-ambixous-neon, text-electric-ink, etc.) */
+  --color-ambixous-neon: var(--ambixous-neon);
+  --color-electric-ink: var(--electric-ink);
+  --color-signal-blue: var(--signal-blue);
+  --color-warm-white: var(--warm-white);
+  --color-slate-gray: var(--slate-gray);
+}
+
+/* Base reset using tokens */
 @layer base {
-  :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 84 100% 50%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 195 100% 56%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 70.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 84 100% 50%;
-    --radius: 0.75rem;
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-@layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
-  }
+/* Global behavior */
+html {
+  scroll-behavior: smooth;
+}
 
-  .animate-slide-up {
-    animation: slideUp 0.8s ease-out forwards;
-  }
+/* Helpers */
+.section-padding {
+  @apply px-4 sm:px-6 md:px-8 lg:px-12;
+}
+.container-width {
+  @apply max-w-7xl mx-auto;
+}
+.text-gradient {
+  background: linear-gradient(135deg, var(--ambixous-neon) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite alternate;
-  }
+/* Buttons: Inline base utilities in each class (no @apply of custom classes) */
+.btn-base {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl;
+}
 
-  .animate-marquee {
-    animation: marquee 80s linear infinite;
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-ambixous-neon text-electric-ink border-2 border-ambixous-neon shadow-lg px-6 py-3 text-sm sm:text-base;
+}
+.btn-primary:hover {
+  box-shadow: 0 12px 24px color-mix(in oklab, var(--ambixous-neon) 25%, transparent);
+}
+
+.btn-primary-lg {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-ambixous-neon text-electric-ink border-2 border-ambixous-neon shadow-lg px-8 py-4 text-base sm:text-lg;
+}
+.btn-primary-lg:hover {
+  box-shadow: 0 12px 24px color-mix(in oklab, var(--ambixous-neon) 25%, transparent);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-transparent text-signal-blue border-2 border-signal-blue px-6 py-3 text-sm sm:text-base;
+}
+.btn-secondary:hover {
+  @apply bg-signal-blue text-electric-ink;
+}
+
+.btn-secondary-lg {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-transparent text-signal-blue border-2 border-signal-blue px-8 py-4 text-base sm:text-lg;
+}
+.btn-secondary-lg:hover {
+  @apply bg-signal-blue text-electric-ink;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-transparent text-warm-white border-2 border-slate-gray px-6 py-3 text-sm sm:text-base;
+}
+.btn-outline:hover {
+  @apply text-ambixous-neon;
+  border-color: var(--ambixous-neon);
+  background-color: color-mix(in oklab, var(--ambixous-neon) 6%, transparent);
+}
+
+.btn-outline-lg {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-transparent text-warm-white border-2 border-slate-gray px-8 py-4 text-base sm:text-lg;
+}
+.btn-outline-lg:hover {
+  @apply text-ambixous-neon;
+  border-color: var(--ambixous-neon);
+  background-color: color-mix(in oklab, var(--ambixous-neon) 6%, transparent);
+}
+
+.btn-coral {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-transparent px-6 py-3 text-sm sm:text-base;
+  color: hsl(351 100% 70%);
+  border: 2px solid hsl(351 100% 70%);
+}
+.btn-coral:hover {
+  color: var(--electric-ink);
+  background-color: hsl(351 100% 70%);
+}
+
+.btn-coral-lg {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-transparent px-8 py-4 text-base sm:text-lg;
+  color: hsl(351 100% 70%);
+  border: 2px solid hsl(351 100% 70%);
+}
+.btn-coral-lg:hover {
+  color: var(--electric-ink);
+  background-color: hsl(351 100% 70%);
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-xl bg-transparent text-slate-gray px-6 py-3 text-sm sm:text-base;
+}
+.btn-ghost:hover {
+  background-color: color-mix(in oklab, var(--slate-gray) 10%, transparent);
+  color: var(--warm-white);
+}
+
+.btn-whatsapp {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap font-bold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 rounded-full p-4 text-white shadow-lg;
+  background-color: hsl(142 71% 45%);
+}
+.btn-whatsapp:hover {
+  background-color: hsl(142 76% 36%);
+  box-shadow: 0 12px 24px color-mix(in oklab, hsl(142 71% 45%) 25%, transparent);
+}
+
+/* Responsiveness */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-coral,
+  .btn-ghost {
+    @apply px-4 py-2 text-sm;
+  }
+  .btn-primary-lg,
+  .btn-secondary-lg,
+  .btn-outline-lg,
+  .btn-coral-lg {
+    @apply px-6 py-3 text-base;
   }
 }
 
+/* Custom animations (tw-animate-css is imported; these complement it) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-marquee {
+  animation: marquee 80s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 .animate-float {
   animation: float 6s ease-in-out infinite;
-}
-
-.animate-pulse-slow {
-  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes fadeIn {
@@ -63,6 +303,9 @@
     transform: translateY(0);
   }
 }
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
 
 @keyframes slideUp {
   from {
@@ -74,63 +317,22 @@
     transform: translateY(0);
   }
 }
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 20px rgba(180, 255, 0, 0.3);
+    box-shadow: 0 0 20px color-mix(in oklab, var(--ambixous-neon) 30%, transparent);
   }
   to {
-    box-shadow: 0 0 30px rgba(180, 255, 0, 0.6);
+    box-shadow: 0 0 30px color-mix(in oklab, var(--ambixous-neon) 60%, transparent);
   }
 }
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-.section-padding {
-  @apply px-4 sm:px-6 md:px-8 lg:px-12;
-}
-
-.container-width {
-  @apply max-w-7xl mx-auto;
-}
-
-.text-gradient {
-  background: linear-gradient(135deg, #b4ff00 0%, #1fb6ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Enhanced button styles */
-.btn-primary {
-  @apply bg-ambixous-neon text-electric-ink font-bold px-6 py-3 rounded-xl shadow-lg border-2 border-ambixous-neon hover:shadow-ambixous-neon/25 transition-all duration-200 hover:scale-105;
-}
-
-.btn-secondary {
-  @apply bg-transparent text-signal-blue font-bold px-6 py-3 rounded-xl border-2 border-signal-blue hover:bg-signal-blue hover:text-electric-ink transition-all duration-200 hover:scale-105;
-}
-
-.btn-outline {
-  @apply bg-transparent text-warm-white font-bold px-6 py-3 rounded-xl border-2 border-slate-gray hover:border-ambixous-neon hover:text-ambixous-neon transition-all duration-200 hover:scale-105;
-}
-
-html {
-  scroll-behavior: smooth;
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
