@@ -1,44 +1,29 @@
 "use client"
 
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
-const upcomingEvents = [
-  {
-    id: 1,
-    title: "Disrupting the Funnel",
-    date: "September 13, 2025",
-    time: "1:00 PM – 5:00 PM",
-    type: "Corporate",
-    location: "Noida",
-    attendees: 100,
-    description: "Disrupting the Funnel is an afternoon of candid insights, proven playbooks, and pitfalls to avoid from AdTech innovators and growth leaders on taking a brand from 0 → 1.",
-    speakers: ["Ms.Shaweta Berry", "Rohit Kaul", "Rachita Gupta", "Sayantan Dasgupta"],
-    status: "Closed",
-    registrationUrl: "https://www.commudle.com/communities/ambixous/events/disrupting-the-funnel-the-future-of-adtech-brand-marketing",
-  },
-  {
-    id: 2,
-    title: "SkillUp Bootcamp",
-    date: "August 2, 2025",
-    time: "10:30 AM – 04:00 PM",
-    type: "Community",
-    location: "Noida",
-    attendees: 200,
-    description: "A high-impact learning experience for developers, designers, and tech professionals to upskill through live sessions with experts from Google, Deloitte, Policy Bazaar, and Nagarro.",
-    speakers: ["Varedh Nigam", "Nitasha Dhingra","Sneha Swaroop","Satendra Kumar"],
-    status: "Closed",
-    registrationUrl: "https://www.commudle.com/communities/ambixous/events/skillup-bootcamp",
-  },
-]
+import { upcomingEventsFallback, type UpcomingEventRecord } from "./data"
 
-export function EventsListing() {
+type EventsListingProps = {
+  events?: UpcomingEventRecord[]
+}
+
+export function EventsListing({ events }: EventsListingProps) {
   const [filter, setFilter] = useState<"All" | "Community" | "Corporate">("All")
 
-  const filteredEvents = upcomingEvents.filter((event) => filter === "All" || event.type === filter)
+  const dataset = useMemo(() => {
+    if (events && events.length > 0) {
+      return events
+    }
+
+    return upcomingEventsFallback
+  }, [events])
+
+  const filteredEvents = dataset.filter((event) => filter === "All" || event.type === filter)
 
   return (
     <section className="py-24 bg-light-ash text-electric-ink">
