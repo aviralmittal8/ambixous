@@ -2,68 +2,14 @@ import { Calendar, Users, Award, TrendingUp, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export function PastHighlights() {
-  const pastEvents = [
-    {
-      title: "Fusion Forum",
-      date: "July 19, 2025",
-      type: "Corporate",
-      attendees: 80,
-      impact: "12 partnerships formed",
-      description: "Corporate networking event bringing together startups and established companies for collaboration.",
-      learnUrl: "https://reskilll.com/event/devconnect",
-    },
-    {
-      title: "AI for Social Good",
-      date: "April 05, 2025",
-      type: "Community",
-      attendees: 200,
-      impact: "5 social projects launched",
-      description:
-        "Collaborative workshop with Google WTM exploring AI applications for social impact and community development.",
-      learnUrl: "https://www.commudle.com/communities/ambixous/events/ai-for-social-good-wtm-google-x-ambixous",
-    },
-    {
-      title: "The Ambitious Women: LIVE",
-      date: "March 08, 2025",
-      type: "Community",
-      attendees: 300,
-      impact: "50+ mentorship connections",
-      description:
-        "International Women's Day celebration featuring inspiring stories from women leaders across industries.",
-      learnUrl: "https://www.commudle.com/communities/ambixous/events/the-ambitious-women-real-stories-real-empowerment",
-    },
-    {
-      title: "BRB : Boring Replaced by Bots",
-      date: "March 01, 2024",
-      type: "Corporate",
-      attendees: 40,
-      impact: "10+ mentorship connections",
-      description:
-        "A live event where top creatives explore AI’s impact on design, answer questions, and spark collaboration.",
-      learnUrl: "https://www.commudle.com/communities/ambixous/events/brb-boring-replaced-by-bots",
-    },
-    {
-      title: "Innovator's Meetup",
-      date: "February 09, 2025",
-      type: "Community",
-      attendees: 150,
-      impact: "15+ mentorship connections",
-      description:
-        "An opportunity to gain expert insights, boost job readiness, expand your network, and showcase thought leadership in tech and design.",
-      learnUrl: "https://www.commudle.com/communities/ambixous/events/innovator-s-meetup",
-    },
-    {
-      title: "Founder’s Day Meetup",
-      date: "January 18, 2025",
-      type: "Corporate",
-      attendees: 500,
-      impact: "70+ mentorship connections",
-      description:
-        "A celebration of Ambixous’s milestones, fostering networking, inspiring tech leaders, and driving innovation with a focus on empowering women in tech.",
-      learnUrl: "https://www.commudle.com/communities/ambixous/events/founder-s-day-meetup",
-    },
-  ]
+import { pastEventsFallback, type PastEventRecord } from "./data"
+
+type PastHighlightsProps = {
+  events?: PastEventRecord[]
+}
+
+export function PastHighlights({ events }: PastHighlightsProps) {
+  const pastEvents = events && events.length > 0 ? events : pastEventsFallback
 
   return (
     <section className="py-24 bg-electric-ink">
@@ -83,7 +29,7 @@ export function PastHighlights() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {pastEvents.map((event, index) => (
               <div
-                key={index}
+                key={event.id ?? index}
                 className="bg-slate-900/50 p-8 rounded-2xl border border-slate-gray/20 hover:border-ambixous-neon/50 transition-all duration-300 hover:scale-105 group animate-slide-up"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
