@@ -1,6 +1,6 @@
 import Link from "next/link"
-import Image from "next/image"
-import { Linkedin, Instagram, Youtube, Twitter, Target } from "lucide-react"
+import { Logo } from "./logo"
+import { Linkedin, Instagram, Youtube, Twitter } from "lucide-react"
 
 export function Footer() {
   const navigation = [
@@ -24,20 +24,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center">
-              <Image 
-                src="/logo.png" 
-                alt="Ambixous Logo" 
-                width={120} 
-                height={40} 
-                className="h-10 w-auto"
-                loading="lazy"
-                quality={85}
-              />
-            </Link>
-            <p className="text-slate-gray max-w-sm">
-              Where ambition finds speed and impact finds scale
-            </p>
+            <Logo size="md" href="/" />
+            <p className="text-slate-gray max-w-sm">Where ambition finds speed and impact finds scale</p>
           </div>
 
           {/* Navigation */}
@@ -76,6 +64,7 @@ export function Footer() {
                       target="_blank"
                       className="text-slate-gray hover:text-ambixous-neon transition-colors duration-200"
                       aria-label={social.name}
+                      rel="noreferrer"
                     >
                       <Icon size={20} />
                     </a>

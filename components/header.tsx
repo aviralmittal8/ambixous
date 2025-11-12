@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
+import { Logo } from "./logo"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
@@ -22,17 +22,7 @@ export function Header() {
       <nav className="container-width section-padding py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image 
-              src="/logo.png" 
-              alt="Ambixous Logo" 
-              width={120} 
-              height={40} 
-              className="h-10 w-auto"
-              priority
-              quality={95}
-            />
-          </Link>
+          <Logo size="sm" href="/" />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -53,7 +43,9 @@ export function Header() {
               asChild
               className="bg-ambixous-neon text-electric-ink hover:bg-ambixous-neon/90 font-bold px-6 py-2 shadow-lg hover:shadow-ambixous-neon/25 transition-all duration-200"
             >
-              <Link href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t" target="_blank">Join Community</Link>
+              <Link href="https://chat.whatsapp.com/KWSzQoOLZ4vJHJZ7KSSD7I?mode=ems_copy_t" target="_blank">
+                Join Community
+              </Link>
             </Button>
           </div>
 
