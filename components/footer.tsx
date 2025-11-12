@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Linkedin, Instagram, Youtube, Twitter, Target } from "lucide-react"
 
 export function Footer() {
@@ -23,8 +24,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="text-2xl font-bold text-ambixous-neon">
-              Ambixous
+            <Link href="/" className="flex items-center">
+              <Image 
+                src="/logo.png" 
+                alt="Ambixous Logo" 
+                width={120} 
+                height={40} 
+                className="h-10 w-auto"
+                loading="lazy"
+                quality={85}
+              />
             </Link>
             <p className="text-slate-gray max-w-sm">
               Where ambition finds speed and impact finds scale
